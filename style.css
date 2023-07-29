@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+#testimonials-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 4%;
+}
+
+.testimonials {
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    max-width: 375px;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color: white;
+    position: relative;
+}
+
+#testimonial-2 {
+    background-color: #48556a; 
+    color: white;
+}
+
+#testimonial-3, #testimonial-5 {
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+#testimonial-4 {
+    background-color: #19212e;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+    border: 1px solid #7541c8;
+}
+
+.testimonials h4 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.verification {
+    opacity: 50%;
+    font-size: 0.8em;
+}
+
+.review {
+    opacity: 70%;
+}
+
+.name {
+    font-size: 1.2em;
+}
+
+.quote-mark {
+    position: absolute;
+    right: 5%;
+    opacity: 50%;
+    top: 0px;
+}
+
+@media (min-width: 576px) {
+    #testimonials-grid-container {
+        flex-direction: row;
+        max-width: 1440px;
+    }
+
+    .testimonials {
+        max-width: 100%;
+    }
+
+    .left-containers {
+        flex-basis: 75%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-containers .testimonials {
+        margin-right: 20px;
+    }
+
+    #testimonial-5 {
+        flex-basis: 25%;
+        align-self: stretch;
+    }
+
+    .top, .bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #testimonial-1, #testimonial-4 {
+        flex-basis: 65%;
+    }
+
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 35%;
+    }
+}
